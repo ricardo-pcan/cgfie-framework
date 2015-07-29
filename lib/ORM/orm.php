@@ -7,9 +7,9 @@
     function __construct() {
         self::getConnection();
     }
-    private static function getConnection() {
-        //require_once ('database.php');
-        self::$database = Database::getConnection(/*set Provider, host, user, pass, db*/);
+    private static function getConnection() {   
+    
+      self::$database = Database::getConnection("MySqlProvider","localhost","root","","chat");
     }
     public static function find($id) {
         $results = self::where('id', $id);
