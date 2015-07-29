@@ -22,8 +22,6 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	require_once VENDOR_PATCH."plates/src/Template/Name.php";
 	require_once VENDOR_PATCH."plates/src/Template/Template.php";
 	require_once VENDOR_PATCH."plates/src/Engine.php";
-	
-	echo VENDOR_PATCH."plates/src/Engine.php";
 
 	// Create new Plates instance
 	$templates = new League\Plates\Engine('app/views/layout');
