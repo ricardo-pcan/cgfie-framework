@@ -36,15 +36,6 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	use PHPRouter\Router;
 	use PHPRouter\Route;
 
-	$collection = new RouteCollection();
-	$collection->attachRoute(new Route('/', array(
-	    '_controller' => 'TestController::test',
-	    'methods' => 'GET'
-	)));
-
-	$router = new Router($collection);
-	$router->setBasePath('/');
-	$route = $router->matchCurrentRequest();
 	
 
 ?>
