@@ -12,6 +12,7 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	require_once APP_PATCH."ORM/database.php";
 	require_once APP_PATCH."ORM/orm.php";	
 
+/* add plate engine template */
 	require_once VENDOR_PATCH."plates/src/Extension/ExtensionInterface.php";
 	require_once VENDOR_PATCH."plates/src/Template/Data.php";
 	require_once VENDOR_PATCH."plates/src/Template/Directory.php";
@@ -23,11 +24,6 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	require_once VENDOR_PATCH."plates/src/Template/Template.php";
 	require_once VENDOR_PATCH."plates/src/Engine.php";
 
-	// Create new Plates instance
-	$templates = new League\Plates\Engine('app/views/layout');
-
-	// Render a template
-	echo $templates->render('profile', array( "name"=>"Aaron ..."));
 
 	
 
