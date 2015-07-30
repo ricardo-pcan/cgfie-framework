@@ -30,7 +30,7 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	require_once VENDOR_PATCH."PHPRouter/Route.php";
 	require_once VENDOR_PATCH."PHPRouter/RouteCollection.php";
 	require_once VENDOR_PATCH."PHPRouter/Router.php";
-	require_once VENDOR_PATCH."PHPRouter/testcontroller.php";
+	
 
 	use PHPRouter\RouteCollection;
 	use PHPRouter\Router;
