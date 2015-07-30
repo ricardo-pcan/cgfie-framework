@@ -24,7 +24,27 @@ define("VENDOR_PATCH", ROOT."vendor".DS);
 	require_once VENDOR_PATCH."plates/src/Template/Template.php";
 	require_once VENDOR_PATCH."plates/src/Engine.php";
 
+/* add PHPRouter */
 
+	require_once VENDOR_PATCH."PHPRouter/Config.php";
+	require_once VENDOR_PATCH."PHPRouter/Route.php";
+	require_once VENDOR_PATCH."PHPRouter/RouteCollection.php";
+	require_once VENDOR_PATCH."PHPRouter/Router.php";
+	require_once VENDOR_PATCH."PHPRouter/testcontroller.php";
+
+	use PHPRouter\RouteCollection;
+	use PHPRouter\Router;
+	use PHPRouter\Route;
+
+	$collection = new RouteCollection();
+	$collection->attachRoute(new Route('/', array(
+	    '_controller' => 'TestController::test',
+	    'methods' => 'GET'
+	)));
+
+	$router = new Router($collection);
+	$router->setBasePath('/');
+	$route = $router->matchCurrentRequest();
 	
 
 ?>
