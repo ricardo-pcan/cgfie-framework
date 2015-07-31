@@ -19,6 +19,7 @@
 
   <script src="vendor/JQuery/jquery.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="vendor/bootbox.js"></script>
   <script src="app/assets/js/main.js"></script>
 </body>
 </html>
